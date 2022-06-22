@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s0_=1-25(m3q^@r95wq97+n4sgb+j5&089qszkbor6n(q-$53+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['abhiramkamini.herokuapp.com', '127.0.0.1']
 
@@ -131,6 +131,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Manual code
 #STATICFILES_DIRS = [ BASE_DIR / "static"]
+
+STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / 'static'
 
