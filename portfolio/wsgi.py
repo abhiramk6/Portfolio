@@ -7,19 +7,19 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
-#import os
+import os
 
-#from django.core.wsgi import get_wsgi_application
+from django.core.wsgi import get_wsgi_application
 
-#os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')
 
-#application = get_wsgi_application()
+application = get_wsgi_application()
 
 
-from whitenoise import WhiteNoise
+#from whitenoise import WhiteNoise
 
-from portfolio import MyWSGIApp
+#from portfolio import MyWSGIApp
 
-application = MyWSGIApp()
-application = WhiteNoise(application, root="/path/to/static/files")
-application.add_files("/path/to/more/static/files", prefix="more-files/")
+#application = MyWSGIApp()
+#application = WhiteNoise(application, root="/path/to/static/files")
+#application.add_files("/path/to/more/static/files", prefix="more-files/")
