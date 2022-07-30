@@ -16,10 +16,3 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')
 application = get_wsgi_application()
 
 
-#from whitenoise import WhiteNoise
-
-#from portfolio import MyWSGIApp
-
-#application = MyWSGIApp()
-#application = WhiteNoise(application, root="/path/to/static/files")
-#application.add_files("/path/to/more/static/files", prefix="more-files/")
